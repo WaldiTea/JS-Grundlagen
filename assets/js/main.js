@@ -135,23 +135,24 @@ document.write("<br></br>");
 
 
 // ---------- string methods lev1_11 ----------
-console.log("---------- string methods lev1_11 ----------");
 
 let x3 = "Hello ";
 let y3 = "World<br>";
+
 let z3 = x3 + y3;
 document.write(z3);
 
 let n = x3 + " " + y3;
 document.write(n);
-n = x3 + "World";
-document.write(n + "<br>");
 
-document.write(x3 + "World");
+x3 += "World<br>";
+document.write(x3);
 
-let meinString = "Ich bin Erster";
-meinString = "Ich komme auf Platz zwei";
-console.log(meinString);
+let meinString = "Ich bin Erster <br>";
+let meinString2 = "Ich komme auf Platz zwei";
+
+meinString += meinString2;
+document.write(meinString);
 
 
 // ---------- window object lev1_4 ----------
